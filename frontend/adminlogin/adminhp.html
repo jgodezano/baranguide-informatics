@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>User Home</title>
+    <link rel="stylesheet" href="C:\Users\63935\Desktop\frontend\adminlogin\adminhp.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+  </head>
+  <body>
+
+    <input type="checkbox" id="check">
+
+    <header>
+      <label for="check">
+        <i class="fas fa-bars" id="sidebar_btn"></i>
+      </label>
+      <div class="left_area">
+        <h3>BARANGUIDE <span>INFORMATICS</span></h3>
+      </div>
+      <div class="right_area">
+        <a href="#" class="logout_btn"><i class="fas fa-power-off"></i>  Logout</a>
+      </div>
+    </header>
+    <!--header area end-->
+    <!--sidebar start-->
+    <div class="sidebar">
+
+      <center>
+        <div>
+        <img src="logo.png" class="logo_image" alt=""></div>
+        <h4> Welcome back, <br> Admin!</h4>
+      </center>
+      <div style = "width: 250px; height: 350px; line-height: 3em; overflow:scroll;">
+      <a href="#"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
+      <a href="residentinfo.html"><i class="fas fa-users"></i><span>Residents Information</span></a>
+      <a href="#"><i class="fas fa-book"></i><span>Issuance of Documents</span></a>
+      <a href="#"><i class="fas fa-calendar-alt"></i><span>Settlement Schedules</span></a>
+      <a href="register.html"><i class="fas fa-user-lock"></i><span>Registration Form</span></a>
+      <a href="#"><i class="fas fa-bullhorn"></i><span>Add Announcements</span></a>
+      <a href="#"><i class="fas fa-ellipsis-h"></i><span>View Concerns</ span></a>
+    </div>
+    </div>
+    <!--sidebar end-->
+
+    <div class="content">
+                <main>
+                  <h1> POPULATION </h1>
+        <div class="main__container">
+
+          <div class="main__title">
+            <div class="main__greeting">
+              <p>Welcome to your dashboard, Admin!</p>
+              <h1>POPULATION</h1>
+            </div>
+          </div>
+          <!-- MAIN TITLE ENDS HERE -->
+
+          <!-- MAIN CARDS STARTS HERE -->
+          <div class="main__cards">
+
+            <div class="card">
+              <div class="dropdown">
+                <span>Male</span>
+                <div class="dropdown-content"> 
+                  <p>578</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="dropdown">
+                <span>Female</span>
+                <div class="dropdown-content"> 
+                  <p>578</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="dropdown">
+                <span>Senior Citizen</span>
+                <div class="dropdown-content"> 
+                  <p>578</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="dropdown">
+                <span>4P's Members</span>
+                <div class="dropdown-content"> 
+                  <p>578</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="dropdown">
+                <span>Persons with Disabilities</span>
+                <div class="dropdown-content">
+                  <p>578</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="dropdown">
+                <span>Registered Voters</span>
+                <div class="dropdown-content"> 
+                  <p>578</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!-- MAIN CARDS ENDS HERE -->
+
+          <!-- BRGY OFFICIALS STARTS HERE -->
+          <div class="officials_grid">
+            <div class="officials">
+              <div class="officials_card">
+                <div class="officials_card_header">
+                  <h2> BARANGAY OFFICIALS </h2>
+                  <button onclick="togglePopup()"> See all <span class="las la-arrow-right"></span></button>
+                </div>
+
+                <div class="officials_card_body">
+                  <div class="table_responsive">
+                  <table width="100%">
+                    <thead>
+                      <tr>
+                        <td style="color: white; background-color: #597272;"> <b> POSITION </b> </td>
+                        <td style="color: white; background-color: #597272;"> <b> NAME </b></td>
+                        <td style="color: white; background-color: #597272;"> <b> SERVICE STATUS </b></td>
+                      </tr>
+                      <tr>
+                        <td> Barangay Captain </td>
+                        <td>Conrado T. Hermosado Jr.</td>
+                        <td>Active</td>
+                      </tr>
+                      <tr>
+                        <td> Sangguniang Barangay Member</td>
+                        <td> Conrado T. Hermosado Sr.</td>
+                        <td>Active</td>
+                      </tr>
+                      <tr>
+                        <td> Sangguniang Barangay Member</td>
+                        <td> Jovita D. Yaco</td>
+                        <td>Active</td>
+                      </tr>
+                      <tr>
+                        <td> Sangguniang Barangay Member</td>
+                        <td> Marife B. De Guzman</td>
+                        <td>Active</td>
+                      </tr>
+                      <tr>
+                        <td> Sangguniang Barangay Member</td>
+                        <td> Eduardo A. Gelido</td>
+                        <td>Active</td>
+                      </tr>
+                      <tr>
+                        <td> Sangguniang Barangay Member</td>
+                        <td> Edgar R. Lacuesta</td>
+                        <td>Active</td>
+                      </tr>
+                      <tr>
+                        <td> Sangguniang Barangay Member</td>
+                        <td> Francisco T. De Guzman</td>
+                        <td>Active</td>
+                      </tr>
+                      <tr>
+                        <td> Sangguniang Barangay Member</td>
+                        <td> Ernesto U. De Guzman</td>
+                        <td>Active</td>
+                      </tr>
+                      <tr>
+                        <td> Barangay Secretary</td>
+                        <td> Rolando T.</td>
+                        <td>Active</td>
+                      </tr>
+                      <tr>
+                        <td> SK Chairperson</td>
+                        <td> Kierby T. Gomez</td>
+                        <td>Active</td>
+                      </tr>
+                    </thead>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+              <div class="buer_map_grid">
+                <div class="main__greeting"> <h1> MAP OF BARANGAY BUER </h1>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61420.94699260969!2d120.1676978517268!3d15.814012227503154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3391567faf6357dd%3A0x10424e3905afe4bb!2sBuer%2C%20Aguilar%2C%20Pangasinan!5e0!3m2!1sen!2sph!4v1618226479815!5m2!1sen!2sph" width="614" height="400" style="border:0; align-items: center;" allowfullscreen="" loading="lazy"></iframe>
+              </div></div>
+          </div>
+
+          <div class="missions_grid">
+            <div class="missions">
+              <div class="missions_card">
+                <div class="missions_card_header">
+                  <h2> BARANGAY MISSION </h2>
+                </div>
+                <div class="missions_card_body">
+                <span>We commit to provide efficient leadership through people empowerment, excellent publice  services and highly sensitive to the needs of the people.</span>
+              </div>
+            </div>
+
+          <div class="visions_grid">
+            <div class="visions">
+              <div class="visions_card">
+                <div class="visions_card_header">
+                  <h2> BARANGAY VISION </h2>
+                </div>
+                <div class="visions_card_body">
+                <span>A healthy, disciplined and economically self-reliant community, wherein quality education is readily accessible and people are living securedly under a participatory, accountable and transparent governance. </span>
+              </div>
+            </div>
+
+          <div class="hotlines_grid">
+            <div class="hotlines">
+              <div class="hotlines_card">
+                <div class="hotlines_card_header">
+                  <h2> EMERGENCY HOTLINES </h2>
+                </div>
+
+                <div class="hotlines_card_body">
+                  <div class="table_hotlines">
+                  <table width="100%">
+                    <thead>
+                      <tr>
+                            <td> Mayor's Office </td>
+                            <td> 0925 - 528 - 6861 </td>
+    
+                        </tr>
+                        <tr>
+                            <td> Vice Mayor's Office </td>
+                            <td> 0917 - 319 - 1021 </td>
+                    
+                        </tr>
+                        <tr>
+                            <td> PNP </td>
+                            <td> 0917 - 471 - 3498 </td>
+                        
+                        </tr>
+                        <tr>
+                            <td> RHU </td>
+                            <td> 0977 - 822 - 3211 </td>
+                    
+                        </tr>
+                        <tr>
+                            <td> BFP </td>
+                            <td> 0917 - 188 - 6611 </td>
+                    
+                        </tr>
+                        <tr>
+                            <td> MDRRMO </td>
+                            <td> 0916 - 224 - 2116 </td>
+                    
+                        </tr>
+                        <tr>
+                            <td> MSWDO </td>
+                            <td> 0998 - 957 - 0876 </td>
+                        
+                        </tr>
+                        <tr>
+                            <td> DILG </td>
+                            <td> 0917 - 123 - 8630 <br> 0918 - 283 - 4292 </td>
+                
+                        </tr>
+                        <tr>
+                            <td> Cenpelco</td>
+                            <td> 075 - 529 - 3673</td>
+                        </tr>
+                    </thead>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+          <div class="datetime_grid">
+            <div class="datetime">
+              <div class="datetime_card">
+                <div class="datetime_card_header">   
+            <h2>DATE/TIME </h2>
+            <span id="datetime"></span>
+<script>
+document.getElementById("datetime").innerHTML = formatAMPM();
+
+function formatAMPM() {
+var d = new Date(),
+    minutes = d.getMinutes().toString().length == 1 ? '0'+d.getMinutes() : d.getMinutes(),
+    hours = d.getHours().toString().length == 1 ? '0'+d.getHours() : d.getHours(),
+    ampm = d.getHours() >= 12 ? 'pm' : 'am',
+    months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
+    days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+return days[d.getDay()]+' '+months[d.getMonth()]+' '+d.getDate()+' '+d.getFullYear()+' '+hours+':'+minutes+ampm;
+}
+</script>
+          </div>
+          </div>
+        </div>
+
+        <div class="popup" id="popup1">
+          <div class="overpopup">
+          <div class="popupcontent">
+
+          </div>
+                <div class="officials_card_header">
+                  <h2> BARANGAY OFFICIALS </h2>
+                              <div class="popupCloseButton" onclick="togglePopup()"> &times; </div>
+                </div>
+                  <table>
+                    <thead>
+                      <tr>
+                        <td style="color: white; background-color: #395858;"> <b> POSITION </b> </td>
+                        <td style="color: white; background-color: #395858;"> <b> NAME </b></td>
+                      </tr>
+                      <tr>
+                        <td>Punong Barangay</td>
+                        <td>Conrado T. Hermosado Jr.</td>
+                      </tr>
+                      <tr>
+                        <td> Sangguniang Barangay Member</td>
+                        <td> Conrado T. Hermosado Sr.</td>
+                      </tr>
+                      <tr>
+                        <td> Sangguniang Barangay Member</td>
+                        <td> Jovita D. Yaco</td>
+                      </tr>
+                      <tr>
+                        <td> Sangguniang Barangay Member</td>
+                        <td> Marife B. De Guzman</td>
+                      </tr>
+                      <tr>
+                        <td> Sangguniang Barangay Member</td>
+                        <td> Eduardo A. Gelido</td>
+                      </tr>
+                      <tr>
+                        <td> Sangguniang Barangay Member</td>
+                        <td> Edgar R. Lacuesta</td>
+                      </tr>
+                      <tr>
+                        <td> Sangguniang Barangay Member</td>
+                        <td> Francisco T. De Guzman</td>
+                      </tr>
+                      <tr>
+                        <td> Sangguniang Barangay Member</td>
+                        <td> Ernesto U. De Guzman</td>
+                      </tr>
+                      <tr>
+                        <td> Barangay Secretary</td>
+                        <td> Rolando T.</td>
+                      </tr>
+                      <tr>
+                        <td> SK Chairperson</td>
+                        <td> Kierby T. Gomez</td>
+                      </tr>
+                      <tr>
+                        <td> SK Kagawad</td>
+                        <td> Jessa C. Riparip</td>
+                      </tr>
+                      <tr>
+                        <td> SK Kagawad</td>
+                        <td> Steve E. Aquino</td>
+                      </tr>
+                      <tr>
+                        <td> SK Kagawad</td>
+                        <td> Hope Marie D. Garcia</td>
+                      </tr>
+                      <tr>
+                        <td> SK Kagawad</td>
+                        <td> Steven Kart Abad</td>
+                      </tr>
+                      <tr>
+                        <td> SK Kagawad</td>
+                        <td> Jomar P. Legaspi</td>
+                      </tr>
+                      <tr>
+                        <td> SK Kagawad</td>
+                        <td> Rogelio D. Calimlim</td>
+                      </tr>
+                      <tr>
+                        <td> SK Kagawad</td>
+                        <td> Christian Joseph D. Fuerte</td>
+                      </tr>
+                    </thead>
+                  </table>
+                </div><script>
+                  function togglePopup(){
+                    document.getElementById("popup1").classList.toggle("active");
+                  }
+                </script>
+                </div>
+                
+              </div>
+            </div>
+        </div>
+      </main>
+    </div>
+
+  </body>
+</html>
+      
