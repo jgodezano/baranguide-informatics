@@ -1,1 +1,1 @@
-# baranguide-informatics
+# Baranguide-Informatics
