@@ -70,70 +70,7 @@ header{
   background: #395858;
 }
 
-.sidebar {
-  background: #395858;
-  margin-top: 70px;
-  padding-top: 30px;
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 250px;
-  height: 100%;
-  transition: 0.5s;
-  transition-property: left;
-  overflow: hidden;
-}
 
-.sidebar .logo_image{
-  width: 250px;
-  height: 150px;
-  border-radius: 50px;
-  margin-bottom: 5px;
-}
-
-.sidebar h4{
-  color: #ccc;
-  margin-top: 0;
-  margin-bottom: 20px;
-}
-
-.sidebar a{
-  color: #fff;
-  display: block;
-  width: 100%;
-  line-height: 60px;
-  text-decoration: none;
-  padding-left: 40px;
-  box-sizing: border-box;
-  transition: 0.5s;
-  transition-property: background;
-}
-
-.sidebar a:hover{
-  background: #66cdaa;
-}
-
-.sidebar i{
-  padding-right: 10px;
-}
-
-label #sidebar_btn{
-  z-index: 1;
-  color: #fff;
-  position: fixed;
-  cursor: pointer;
-  left: 280px;
-  font-size: 20px;
-  margin: 5px 0;
-  transition: 0.5s;
-  transition-property: color;
-  display: inline-block;
-  margin-left: 70px;
-}
-
-label #sidebar_btn:hover{
-  color: #395858;
-}
 
 div.scroll {
   overflow: auto;
@@ -155,9 +92,7 @@ div.scroll {
 }
 
 .content{
-  margin-left: 250px;
   height: 100vh;
-  transition: 0.5s;
   background-repeat: repeat;
   background-attachment: fixed;
   overflow: scroll;
@@ -172,8 +107,7 @@ div.scroll {
 }
 
 main {
-  background: #f3f4f6;
-  margin-left: 0px;
+  background: linear-gradient(135deg, #014e44, #f5f7f7);
   min-height: calc(100vh - 90px;);
   display: inline-block;
     transition: 0.5s;
@@ -192,8 +126,10 @@ main {
 
 .main__greeting > h1 {
   font-size: 24px;
-  color: #2e4a66;
+  color: white;
+  text-transform: uppercase;
     margin-top: 10px;
+
 }
 
 .main__greeting > p {
@@ -206,7 +142,7 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 15px;
-  margin: 10px 0;
+  margin: 10px 0
 }
 
 .card {
@@ -218,7 +154,7 @@ main {
   border-radius: 5px;
   border: 1px solid #2F4F4F;
   background: #ffffff;
-  box-shadow: 5px 5px 13px #ededed, -5px -5px 13px #ffffff;
+  box-shadow: 2px 2px 13px #ededed, -2px -2px 13px #ffffff;
   align-items: center;
 }
 
@@ -293,7 +229,7 @@ main {
   position: sticky;
   top: 0;
   display: flex;
-  background-color: white;
+  background-color: #052d31;
   border-bottom: 1px solid whitesmoke;
   z-index: 999;
 }
@@ -320,6 +256,7 @@ main {
 .emailRow__options {
   display: flex;
   align-items: center;
+
 }
 
 .emailRow__options .material-icons,
@@ -334,6 +271,7 @@ input {
   border-bottom: 1px solid whitesmoke;
   cursor: pointer;
   z-index: 999;
+  border-style: ridge;
 }
 
 .emailRow:hover {

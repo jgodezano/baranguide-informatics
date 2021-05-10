@@ -2,8 +2,12 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>View Concerns</title>
-    <link rel="stylesheet" href="vconcern.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Font Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <title>View Concern</title>
+    <link rel="stylesheet" href="sschedule.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
   </head>
   <body>
@@ -22,293 +26,246 @@
       </div>
     </header>
     <!--header area end-->
-    <!--sidebar start-->
-    <div class="sidebar">
 
-      <center>
-        <div>
-        <img src="logo.png" class="logo_image" alt=""></div>
-        <h4> Welcome back, <br> Admin!</h4>
-      </center>
-      <div style = "width: 250px; height: 350px; line-height: 3em; overflow:scroll;">
-      <a href="#"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
-      <a href="#"><i class="fas fa-users"></i><span>Residents</span></a>
-      <a href="#"><i class="fas fa-book"></i><span>Issuance of Documents</span></a>
-      <a href="#"><i class="fas fa-calendar-alt"></i><span>Settlement Schedules</span></a>
-      <a href="#"><i class="fas fa-user-lock"></i><span>Registered Accounts</span></a>
-      <a href="#"><i class="fas fa-bullhorn"></i><span>Announcements</span></a>
-      <a href="#"><i class="fas fa-ellipsis-h"></i><span>View Concerns</ span></a>
-    </div>
-    </div>
-    <!--sidebar end-->
 
     <div class="content">
                 <main>
+                  <h1> VIEW CONCERNS </h1>
         <div class="main__container">
 
           <div class="main__title">
             <div class="main__greeting">
-              <h1>Barangay Concerns</h1>
+              <p>Welcome to your dashboard, Admin!</p>
+              <h1>Notification for All </h1>
             </div>
           </div>
           <!-- MAIN TITLE ENDS HERE -->
 
           <!-- MAIN CARDS STARTS HERE -->
-          <!-- MAIN CARDS STARTS HERE -->
-          <div class="custom-padding">
-    <nav>
-      <div class="start">
-        &nbsp 
-      </div>
-      <ul class="menu-area">
-        <li>
-          <a href="#">View Concerns</a>
-        </li>
-        
-        
-      </ul>
-        
-    </nav>
-  </div>
+          <div class="main__cards">
+
+            <div class="card">
+              <div class="dropdown">
+                <span>Total of Blotter</span>
+                <div class="dropdown-content"> 
+                  <p>578</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="dropdown">
+                <span>Settled Blotter</span>
+                <div class="dropdown-content"> 
+                  <p>578</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="dropdown">
+                <span>Unsettled Blotter</span>
+                <div class="dropdown-content"> 
+                  <p>578</p>
+                </div>
+              </div>
+            </div>
+
+          
+          </div>
           <!-- MAIN CARDS ENDS HERE -->
 
-<div class="search-container">
-    <form> 
-<input type="text" placeholder=" Type any of text in fields" name="search"> 
-<button class="button button1">Search</button>
-<button class="button button2">Clear</button>
-<div><button class="button button3">New Botter</button></div>
-</form>
-  </div>
+          <!-- Section Starts -->
+        <div class="emailList__sections">
+          <div class="section section__selected">
+            <h4>Primary</h4>
+          </div>
 
-          <!-- TABLE STARTS HERE -->
-          <div class="table_grid">
-            <div class="table-box">
-              <div class="table-row table-head">
-            <div class="table-cell first-cell">
-                <p>Blotter No.</p>
-            </div>
-            <div class="table-cell">
-                <p>Type of Incident</p>
-            </div>
-            <div class="table-cell">
-                <p>Blotter Status</p>
-            </div>
-            <div class="table-cell">
-                <p>Date and Time Reported</p>
-            </div>
-            
-            <div class="table-cell last-cell">
-                <p>Date and Time of Incident</p>
-            </div> 
+          <div class="section">
+            <h4>Documents Concerns</h4>
+          </div>
 
-            <div class="table-cell last-cell">
-                <p>Place of Incident</p>
-            </div> 
+          <div class="section">
+            <h4>Blotter Concerns</h4>
+          </div>
+
+          <div class="section">
+            <h4>Personal Concerns</h4>
+          </div>
+
+          <div class="section">
+            <h4>Other Concerns</h4>
+          </div>
         </div>
+        <!-- Section Ends -->
 
-
-        <div class="table-row">
-            <div class="table-cell first-cell">
-                <p>1</p>
-            </div>
-            <div class="table-cell">
-                <p>Chismisan</p>
-            </div>
-            <div class="table-cell">
-                <p>Pending</p>
-            </div>
-            <div class="table-cell">
-                <p>Nov. 07, 2021 12:00pm</p>
-            </div>
-            
-            <div class="table-cell last-cell">
-                <a>Nov. 1, 2021  3:00pm</a>
-            </div>  
-
-            <div class="table-cell last-cell">
-                <a>Tapat ng Bahay</a>
-            </div>  
-        </div>
-
-
-        <div class="table-row">
-            <div class="table-cell first-cell">
-                <p></p>
-            </div>
-            <div class="table-cell">
-                <p></p>
-            </div>
-            <div class="table-cell">
-                <p></p>
-            </div>
-            <div class="table-cell">
-                <p></p>
-            </div>
-            
-            <div class="table-cell last-cell">
-                <a></a>
-            </div> 
-
-            <div class="table-cell last-cell">
-                <a></a>
-            </div>   
-        </div>
-
-        <div class="table-row">
-            <div class="table-cell first-cell">
-                <p></p>
-            </div>
-            <div class="table-cell">
-                <p></p>
-            </div>
-            <div class="table-cell">
-                <p></p>
-            </div>
-            <div class="table-cell">
-                <p></p>
-            </div>
-            
-            <div class="table-cell last-cell">
-                <a></a>
-            </div> 
-
-            <div class="table-cell last-cell">
-                <a></a>
-            </div>   
-        </div>
-        <div class="table-row">
-            <div class="table-cell first-cell">
-                <p></p>
-            </div>
-            <div class="table-cell">
-                <p></p>
-            </div>
-            <div class="table-cell">
-                <p></p>
-            </div>
-            <div class="table-cell">
-                <p></p>
-            </div>
-            
-            <div class="table-cell last-cell">
-                <a></a>
-            </div>
-            <div class="table-cell last-cell">
-                <a></a>
-            </div>    
-        </div>
-
-        <div class="table-row">
-            <div class="table-cell first-cell">
-                <p></p>
-            </div>
-            <div class="table-cell">
-                <p></p>
-            </div>
-            <div class="table-cell last-cell">
-                <a></a>
-            </div>
-        </div>
-
-        <div class="table-row">
-            <div class="table-cell first-cell">
-                <p></p>
-            </div>
-            <div class="table-cell">
-                <p></p>
-            </div>
-            <div class="table-cell last-cell">
-                <a></a>
-            </div>
-        </div>
-
-
-        <div class="table-row">
-            <div class="table-cell first-cell">
-                <p></p>
-            </div>
-            <div class="table-cell">
-                <p></p>
-            </div>
-            <div class="table-cell last-cell">
-                <a></a>
-            </div>
-        </div>
-
-        <div class="table-row">
-            <div class="table-cell first-cell">
-                <p></p>
-            </div>
-            <div class="table-cell">
-                <p></p></p>
-            </div>
-            <div class="table-cell last-cell">
-                <a></a>
-            </div>
-        </div>
-
-        <div class="table-row">
-            <div class="table-cell first-cell">
-                <p></p>
-            </div>
-            <div class="table-cell">
-                <p></p>
-            </div>
-            <div class="table-cell last-cell">
-                <a></a>
-            </div>
-</div>
-</div>
-
-<div class="main__cards">
-
-            <div class="card">
-              <div class="dropdown">
-                <span>Settled Cases</span>
-                <div class="dropdown-content"> 
-                  <p>578</p>
-                </div>
-              </div>
+        <!-- Email List rows starts -->
+        <div class="emailList__list">
+          <!-- Email Row Starts -->
+          <div class="emailRow">
+            <div class="emailRow__options">
+              <input type="checkbox" name="" id="" />
+              <span class="material-icons"> star_border </span>
             </div>
 
-            <div class="card">
-              <div class="dropdown">
-                <span>Unsettled Cases</span>
-                <div class="dropdown-content"> 
-                  <p>578</p>
-                </div>
-              </div>
+            <h3 class="emailRow__title">Notification</h3>
+
+            <div class="emailRow__message">
+              <h4>
+                Blotter Report
+                <span class="emailRow__description"> - November 11, 2020 </span>
+              </h4>
             </div>
 
-            <div class="card">
-              <div class="dropdown">
-                <span>Scheduled Cases</span>
-                <div class="dropdown-content"> 
-                  <p>578</p>
-                </div>
-              </div>
+            <p class="emailRow__time">5pm</p>
+          </div>
+          <!-- Email Row Ends -->
+
+            <!-- Email Row Starts -->
+          <div class="emailRow">
+            <div class="emailRow__options">
+              <input type="checkbox" name="" id="" />
+              <span class="material-icons"> star_border </span>
             </div>
 
-            <div class="card">
-              <div class="dropdown">
-                <span>Unscheduled Cases</span>
-                <div class="dropdown-content"> 
-                  <p>578</p>
-                </div>
-              </div>
+            <h3 class="emailRow__title">Notification</h3>
+
+            <div class="emailRow__message">
+              <h4>
+                Documents Report
+                <span class="emailRow__description"> - December 15, 2020 </span>
+              </h4>
             </div>
-             <div class="card">
-              <div class="dropdown">
-                <span>Pending</span>
-                <div class="dropdown-content"> 
-                  <p>578</p>
-                </div>
-              </div>
-            </div>  
-              </div>
+
+            <p class="emailRow__time">1pm</p>
+          </div>
+          <!-- Email Row Ends -->
+
+          <!-- Email Row Starts -->
+          <div class="emailRow">
+            <div class="emailRow__options">
+              <input type="checkbox" name="" id="" />
+              <span class="material-icons"> star_border </span>
             </div>
-        </div>
+
+            <h3 class="emailRow__title">Notification</h3>
+
+            <div class="emailRow__message">
+              <h4>
+                Blotter Report
+                <span class="emailRow__description"> - November 11, 2020 </span>
+              </h4>
+            </div>
+
+            <p class="emailRow__time">8am</p>
+          </div>
+          <!-- Email Row Ends -->
+
+            <!-- Email Row Starts -->
+          <div class="emailRow">
+            <div class="emailRow__options">
+              <input type="checkbox" name="" id="" />
+              <span class="material-icons"> star_border </span>
+            </div>
+
+            <h3 class="emailRow__title">Notification</h3>
+
+            <div class="emailRow__message">
+              <h4>
+                Documents Report
+                <span class="emailRow__description"> - December 15, 2020 </span>
+              </h4>
+            </div>
+
+            <p class="emailRow__time">8pm</p>
+          </div>
+          <!-- Email Row Ends -->
+
+          <!-- Email Row Starts -->
+          <div class="emailRow">
+            <div class="emailRow__options">
+              <input type="checkbox" name="" id="" />
+              <span class="material-icons"> star_border </span>
+            </div>
+
+            <h3 class="emailRow__title">Notification</h3>
+
+            <div class="emailRow__message">
+              <h4>
+                Blotter Report
+                <span class="emailRow__description"> - November 11, 2020 </span>
+              </h4>
+            </div>
+
+            <p class="emailRow__time">11am</p>
+          </div>
+          <!-- Email Row Ends -->
+
+            <!-- Email Row Starts -->
+          <div class="emailRow">
+            <div class="emailRow__options">
+              <input type="checkbox" name="" id="" />
+              <span class="material-icons"> star_border </span>
+            </div>
+
+            <h3 class="emailRow__title">Notification</h3>
+
+            <div class="emailRow__message">
+              <h4>
+                Documents Report
+                <span class="emailRow__description"> - December 15, 2020 </span>
+              </h4>
+            </div>
+
+            <p class="emailRow__time">10pm</p>
+          </div>
+          <!-- Email Row Ends -->
+
+          <!-- Email Row Starts -->
+          <div class="emailRow">
+            <div class="emailRow__options">
+              <input type="checkbox" name="" id="" />
+              <span class="material-icons"> star_border </span>
+            </div>
+
+            <h3 class="emailRow__title">Notification</h3>
+
+            <div class="emailRow__message">
+              <h4>
+                Blotter Report
+                <span class="emailRow__description"> - November 11, 2020 </span>
+              </h4>
+            </div>
+
+            <p class="emailRow__time">8pm</p>
+          </div>
+          <!-- Email Row Ends -->
+
+            <!-- Email Row Starts -->
+          <div class="emailRow">
+            <div class="emailRow__options">
+              <input type="checkbox" name="" id="" />
+              <span class="material-icons"> star_border </span>
+            </div>
+
+            <h3 class="emailRow__title">Notification</h3>
+
+            <div class="emailRow__message">
+              <h4>
+                Blotter Report
+                <span class="emailRow__description"> - November 11, 2020 </span>
+              </h4>
+            </div>
+
+            <p class="emailRow__time">4pm</p>
+          </div>
+          <!-- Email Row Ends -->
+
+      <!-- Email List Ends -->
+    </div>
+         
+
+              
       </main>
     </div>
 
