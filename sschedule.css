@@ -77,29 +77,11 @@ div.scroll {
     transition: top 0.3s; 
 }
 
-#check:checked ~ .sidebar{
-  left: -190px;
-}
-
-#check:checked ~ .sidebar a span{
-  display: none;
-}
-
-#check:checked ~ .sidebar a{
-  font-size: 20px;
-  margin-left: 170px;
-  width: 80px;
-}
-
 .content{
   height: 100vh;
   background-repeat: repeat;
   background-attachment: fixed;
   overflow: scroll;
-}
-
-#check:checked ~ .content{
-  margin-left: 60px;
 }
 
 #check{
@@ -108,10 +90,9 @@ div.scroll {
 
 main {
   background: linear-gradient(135deg, #014e44, #f5f7f7);
-  min-height: calc(100vh - 90px;);
+  width: 1362px;
   display: inline-block;
     transition: 0.5s;
-  transition-property: left;
   height: 1120px;
 }
 
