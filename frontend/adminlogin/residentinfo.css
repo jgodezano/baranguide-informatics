@@ -1,7 +1,7 @@
 body{
   margin: 0;
   background-size: cover;
-  background-image: linear-gradient(135deg, #31474d 0%, #597272 74%);
+  background-image: white;
 }
 
 
@@ -13,7 +13,8 @@ body{
   text-transform: uppercase;
   align-content: center;
   color: #ffffff;
-  background-image: linear-gradient(135deg, #7eebb4 0%, #ffffff 74%);
+  background-image: #052d31;
+  font-family: sans-serif;
 }
 
 .resident_card_header button{
@@ -26,7 +27,7 @@ body{
 
 table {
   border-collapse: collapse;
-  background-image: linear-gradient(135deg, #043013 0%, #5fe286 74%);
+  background-image: linear-gradient(135deg, #043013 30%, #5fe286 74%);
   position: absolute;
   left: 50%;
   top: 50%;
