@@ -3,7 +3,7 @@
 
 
 *{
-  padding: 0;
+  padding: auto;
   margin: 0;
   background: fixed;
 }
@@ -95,7 +95,7 @@ margin-top: 50px;
   letter-spacing: 1px;
   text-transform: uppercase;
   display: block;
-  padding: 0 25px;
+  padding:  0 50px;
   font-size: 14px;
   line-height: 30px;
 
@@ -113,7 +113,7 @@ margin-top: -30px;
 nav {
   display: inline-block;
   position: unset;
-  padding: 10px 20px 10px 10px;
+  padding: 10px 50px 10px 10px;
   text-align: right;
   z-index: 1;
   background: #333;
