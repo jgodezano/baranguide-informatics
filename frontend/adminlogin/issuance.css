@@ -111,12 +111,10 @@ margin-bottom: 20px;
 margin-top: -30px;
 }
 nav {
-  display: flex;
+  display: inline-flex;
   justify-content: space-between;
-  align-content: center;
   position: unset;
   padding: 10px 50px 10px 10px;
-  text-align: left;
   z-index: 1;
   background: #333;
   margin: 0 auto;
@@ -125,11 +123,9 @@ nav {
 }
 .start {
   width: 15%;
-  float: left;
   text-transform: uppercase;
   color: #fff;
   font-size: 18px;
-  text-align: left;
   padding-left: 2%;
 
 }
