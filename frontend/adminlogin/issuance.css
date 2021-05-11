@@ -94,8 +94,8 @@ margin-top: 50px;
   color: #fff;
   letter-spacing: 1px;
   text-transform: uppercase;
-  display: block;
-  padding:  0 50px;
+  position: unset;
+  padding:  0 25px;
   font-size: 14px;
   line-height: 30px;
 
@@ -104,7 +104,8 @@ margin-top: 50px;
 }
 .menu-area li {
   list-style: none;
-  display: inline-block;
+  display: inline-flex;
+
 }
 .custom-padding {
 margin-bottom: 20px;
@@ -114,19 +115,18 @@ nav {
   display: inline-flex;
   justify-content: space-between;
   position: unset;
-  padding: 10px 50px 10px 10px;
+  padding: 25px 50px 25px 10px;
   z-index: 1;
   background: #333;
-  margin: 0 auto;
+
   width: calc(100% - 60px);
   margin-top: 50px;
 }
 .start {
-  width: 15%;
+  width: -30%;
   text-transform: uppercase;
   color: #fff;
   font-size: 18px;
-  padding-left: 2%;
 
 }
 .menu-area li a:hover {
