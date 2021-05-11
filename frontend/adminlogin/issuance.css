@@ -3,7 +3,7 @@
 
 
 *{
-  padding: 0;
+  padding: auto;
   margin: 0;
   background: fixed;
 }
@@ -95,7 +95,7 @@ margin-top: 50px;
   letter-spacing: 1px;
   text-transform: uppercase;
   display: block;
-  padding: 0 25px;
+  padding:  0 50px;
   font-size: 14px;
   line-height: 30px;
 
@@ -111,10 +111,10 @@ margin-bottom: 20px;
 margin-top: -30px;
 }
 nav {
-  display: inline-block;
+  display: inline-flex;
+  justify-content: space-between;
   position: unset;
-  padding: 10px 20px 10px 10px;
-  text-align: right;
+  padding: 10px 50px 10px 10px;
   z-index: 1;
   background: #333;
   margin: 0 auto;
@@ -123,11 +123,9 @@ nav {
 }
 .start {
   width: 15%;
-  float: left;
   text-transform: uppercase;
   color: #fff;
   font-size: 18px;
-  text-align: left;
   padding-left: 2%;
 
 }
