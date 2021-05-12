@@ -11,7 +11,8 @@ background-color: white;
     margin: auto;
 }
 tr:nth-child(even) {
-    background-color: lightslategray;
+    background-color: rgb(10, 112, 214);
+    
   }
  
  header {
