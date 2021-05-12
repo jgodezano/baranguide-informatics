@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
 
-
-
 *{
   padding: auto;
   margin: 0;
@@ -95,7 +93,7 @@ margin-top: 50px;
   letter-spacing: 1px;
   text-transform: uppercase;
   position: unset;
-  padding:  0 40px;
+  padding:  10px 10px;
   font-size: 14px;
   line-height: 30px;
 
