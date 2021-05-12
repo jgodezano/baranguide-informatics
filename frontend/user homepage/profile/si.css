@@ -23,8 +23,13 @@ body{
   display: flex;
 }
 
+.rightside{
+  float: right;
+  display: inline-flex;
+}
+
 .wrapper .profile_skills{
-   width: 400px;
+   width: 450px;
    height: auto;
    position: absolute;
    top: 100%;
@@ -77,11 +82,13 @@ body{
   background: #fff;
   border-radius: 10px;
   padding: 25px;
+
 }
 
 .wrapper .profile .profile_skills .skills{
   padding-bottom: 20px;
   border-bottom: 1px solid #cccccc;
+  width: 400px;
 }
 
 .wrapper .profile .profile_skills .skills p{
@@ -152,3 +159,4 @@ body{
 .wrapper .profile_counts .profile_counts_wrap .item .title{
   font-size: 14px;
 }
+
