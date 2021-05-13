@@ -79,14 +79,7 @@ header{
   background-attachment: fixed;
 background: linear-gradient(135deg, #014e44, #f5f7f7);   
 }
-
-#check:checked ~ .content{
-  margin-left: 100px;  
-}
-
-#check{
-  display: none;
-}
+  
 
 main {
   background: linear-gradient(135deg, #014e44, #f5f7f7);
@@ -196,7 +189,7 @@ align-items: center;
 
 }
 .table-head{
-    background: linear-gradient(135deg, #014e44, #f5f7f7);	
+    background: #052d31;
     box-shadow: none;
     color: #fff;
     font-weight: 600;
