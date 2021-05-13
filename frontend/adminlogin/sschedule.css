@@ -291,3 +291,52 @@ input {
   font-weight: 400;
   color: gray;
 }
+
+.dropbtn {
+  background-color: #00b33c;
+  color: white;
+ padding: 13px 27px;
+  font-size: 13px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 13px 27px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #5c8a8a}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #5c8a8a}
+
+.button {
+  border: none;
+  color: white;
+  padding: 13px 27px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button1 {background-color: #003380;} 
