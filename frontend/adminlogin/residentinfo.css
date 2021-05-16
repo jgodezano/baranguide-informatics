@@ -12,6 +12,7 @@ header{
   display: inline-flex;
 }
 
+
 .resident_card_header h3{
   color: rgb(24, 218, 33);
     text-transform: uppercase;
@@ -49,10 +50,23 @@ header{
   border: 2px solid;
 }
 
-.crud{
-  margin-bottom: 1000px;
-  background-color: #01281A;
+.btn_grid{
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: 61% auto;
+  margin-top: 140px;
+  margin-left: 1129px;
+    border-radius: 5px;
+    display: inline-flex;
+    gap: 20;
 }
+
+.btn_card button{
+  border-radius: 5px;
+  padding: 14px 14px 14px 14px;
+}
+
+
 table {
   border-collapse: collapse;
   background-color: white;
@@ -117,4 +131,75 @@ tr td:last-child {
 
 .button:hover{
   background: #16b37e;
+}
+
+.popup .overpopup {
+  position: fixed;
+  top: 150px;
+  left: 410px;
+  width: 470px;
+  height: 430px;
+  background: white;
+  z-index: 1;
+  display: none;
+  border-radius: 5px;
+  border: 2px solid #052d31;
+  overflow: scroll;
+}
+
+.popup .popupcontent {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background: #fff;
+  width: 470px;
+  height: 300px;
+  z-index: 2;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.popup button{
+margin-left: 350px;
+    border-radius: 5px;
+    padding: 14px 14px 14px 14px;
+}
+
+.popup .residentimg{
+    width: 150px;
+    height: 150px;
+    top: 10px;
+    left: 10px;
+    margin-bottom: 0px;
+    position: relative;
+    display: inline-flex;
+}
+
+.popup .popupCloseButton {
+    background-color: #fff;
+    border: 3px solid #999;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: arial;
+    font-weight: bold;
+    position: absolute;
+    top: -0px;
+    right: -0px;
+    font-size: 25px;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+.popup.active .overpopup {
+  display: block;
+}
+
+.popup.active .popupcontent {
+  transition: all 300ms ease-in-out;
+  transform: translate(-50%, -50%) scale(0);
 }
