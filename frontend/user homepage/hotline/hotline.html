@@ -1,88 +1,82 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='C:\Users\63935\Desktop\frontend\user homepage\hotline\hotline.css'>
-    <script src='main.js'></script>
-</head>
-  <style>
-body {
-  background-image: linear-gradient(135deg, #485461 0%, #28313b 74%);
-}
-</style>
-   <div class="header">
-      <div class="header__left">
-      
-        <img
-          src="logo-nb.png"
-          alt=""
-        />
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Font Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <title>Hotline</title>
+    <link rel="stylesheet" href="hotline.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+  </head>
+  <body>
+
+    <input type="checkbox" id="check">
+
+    <header>
+      <div class="left_area">
+        <h3>BARANGUIDE <span>INFORMATICS</span></h3>
       </div>
-    </div>
-    
-<h1  class="header__middle">HOTLINES</h1> 
-
-<body>
-    
-    <div>
-    <table class="hotline">
-        </tr>
-                                    <td> Mayor's Office </td>
-                                    <td> 0925 - 528 - 6861 </td>
-            
-                                </tr>
-                                <tr>
-                                    <td> Vice Mayor's Office </td>
-                                    <td> 0917 - 319 - 1021 </td>
-                            
-                                </tr>
-                                <tr>
-                                    <td> PNP </td>
-                                    <td> 0917 - 471 - 3498 </td>
-                                
-                                </tr>
-                                <tr>
-                                    <td> RHU </td>
-                                    <td> 0977 - 822 - 3211 </td>
-                            
-                                </tr>
-                                <tr>
-                                    <td> BFP </td>
-                                    <td> 0917 - 188 - 6611 </td>
-                            
-                                </tr>
-                                <tr>
-                                    <td> MDRRMO </td>
-                                    <td> 0916 - 224 - 2116 </td>
-                            
-                                </tr>
-                                <tr>
-                                    <td> MSWDO </td>
-                                    <td> 0998 - 957 - 0876 </td>
-                                
-                                </tr>
-                                <tr>
-                                    <td> DILG </td>
-                                    <td> 0917 - 123 - 8630 <br> 0918 - 283 - 4292 </td>
-                        
-                                </tr>
-                                <tr>
-                                    <td> Cenpelco</td>
-                                    <td> 075 - 529 - 3673</td>
-                                </tr>
-                                        
-         </table>
-        </div>
+      <div class="right_area">
+        <a href="#" class="logout_btn"><i class="fas fa-power-off"></i>  Logout</a>
+      </div>
+    </header>
+    <!--header area end-->
 
 
+    <div class="content">
+                <main>
+                  <h1> VIEW CONCERNS </h1>
+        <div class="main__container">
+
+          <div class="main__title">
+            <div class="main__greeting">
+              <p>Welcome to your Hotline, User!</p>
+              <h1>HOTLINE </h1>
+            </div>
+          </div>
+          <!-- MAIN TITLE ENDS HERE -->
 
 
+<!-- TABLE STARTS HERE -->
+          <div class="table_grid">
+            <div class="table-box">
+              <button type="button" class="collapsible">Mayor's Office:  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0925 - 528 - 6861</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<button type="button" class="collapsible">Vice Mayor's Office:  &nbsp;&nbsp;&nbsp;&nbsp; 0917 - 319 - 1021</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<button type="button" class="collapsible">PNP:  &nbsp;&nbsp;&nbsp;&nbsp; 0917 - 471 - 3498</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+           </div>
+           </div>
 
 
+              
 
-
-</body>
+  </body>
 </html>
+      
