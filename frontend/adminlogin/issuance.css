@@ -164,8 +164,11 @@ align-items: center;
     color: #555;
     font-size: 15px;
     box-shadow: 0 1px 4px 0px rgba(0,0,50,0.3);
-
 }
+
+
+
+
 .table-head{
     background:#013228;
     box-shadow: none;
