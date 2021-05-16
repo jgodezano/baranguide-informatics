@@ -212,6 +212,21 @@ margin-left: 320px;
 margin-top: 10px;
 position: absolute;
 }
+#registration1{
+  border-radius: 20px;
+  border: 1px solid #2F4F4F;
+  background-color: #052d31;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 10px 30px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+margin-left: 470px;
+margin-top: 10px;
+position: absolute;
+}
 
 
 button:active {
