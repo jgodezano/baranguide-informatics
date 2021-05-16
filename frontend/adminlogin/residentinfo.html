@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="residentinfo.css">
   </head> 
   <body>
-
-        <div class="resident_grid">
-           
-            <div>
-                <div class="resident_card_header">
-                  <h2> Resident Information </h2>
-                  <div>
+<header>
+        <div class="resident_card_header">
+          <h3>BARANGUIDE <span>INFORMATICS</span></h3>
+        </div>
+        
+        <div class="right_area">
+                  
                     <form class="example" action="action_page.php">
                       <input type="text" placeholder="Search.." name="search">
                       <button type="submit"><i class="fa fa-search"></i></button>
@@ -22,44 +22,59 @@
                       <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
                     </form>
                     </div>
-                </div>
-
+                
+              </header>
+              <br>
+              <div class="btn_grid">
+                <div class="btn_card">
+<button style="background-color: #395858; color: white;">Update</button>
+<button style="background-color: #11484d; color: white;">Delete</button>
+</div>
+</div>
+         
                   <div class="table_responsive">
                   <table>
                     
                     <thead>
                       <tr>
-                        <td style="color: rgb(0, 0, 0); background-color: #5aeeee;"> <b> Fullname</b> </td>
-                        <td style="color: rgb(0, 0, 0); background-color: #5aeeee;"> <b> Age </b></td>
-                        <td style="color: rgb(0, 0, 0); background-color: #5aeeee;"> <b> Gender </b></td>
+                        <td style="color: rgb(0, 0, 0); background-color: #058a22;"> <b> Fullname</b> </td>
+                        <td style="color: rgb(0, 0, 0); background-color: #058a22;"> <b> Purok</b> </td>
+                        <td style="color: rgb(0, 0, 0); background-color: #058a22;"> <b> Age </b></td>
+                        <td style="color: rgb(0, 0, 0); background-color: #058a22;"> <b> Gender </b></td>
                       </tr>
-                      <tr>
+                      <tr onclick="togglePopup()">
                         <td>Mirasol Estor</td>
+                        <td>Purok</td>
                         <td>20</td>
                         <td>Female</td>
                       </tr>
-                      <tr>
+                      <tr onclick="togglePopup1()">
                         <td> Venus Jemina</td>
+                        <td>Purok</td>
                         <td> 21</td>
                         <td>Female</td>
                       </tr>
-                      <tr>
+                      <tr onclick="togglePopup2()">
                         <td> Ron Fernandez</td>
+                        <td>Purok</td>
                         <td> 20</td>
                         <td>Male</td>
                       </tr>
-                      <tr>
+                      <tr onclick="togglePopup3()">
                         <td> Jerika Kia Villar</td>
+                        <td>Purok</td>
                         <td> 21</td>
                         <td>Female</td>
                       </tr>
-                      <tr>
+                      <tr  onclick="togglePopup4()">
                         <td> Jessie Godezano</td>
+                        <td>Purok</td>
                         <td> 21</td>
                         <td>Male</td>
                       </tr>
-                      <tr>
-                        <td> Ermir Donayre</td>
+                      <tr  onclick="togglePopup5()">
+                         <td> Ermir Donayre</td>
+                        <td>Purok</td>
                         <td> 1</td>
                         <td>Male</td>
 
@@ -67,6 +82,133 @@
                     </thead>
                   </table>
                 </div>
+
+                <div class="popup" id="popup1">
+                  <div class="overpopup">
+                  <div class="popupcontent">
+        
+                  </div>
+                  <div class="popupCloseButton" onclick="togglePopup()"> &times; </div>
+                  <img src="C:\Users\Jerika\Documents\GitHub\baranguide-informatics\src image\brgy logo.jpg" class="residentimg" alt=""> <br><br>
+                  <span style="margin-left: 20px;"> Name: Mirasol Estor</span> <br><br>
+                  <span style="margin-left: 20px;"> Address: 124 Purok 1 Brgy. Buer Pangasinan </span> <br><br>
+                  <span style="margin-left: 20px;"> Age: 21 </span> <br><br>
+                  <span style="margin-left: 20px;"> Number: 09123456778 </span> <br><br>
+                  <span style="margin-left: 20px;"> Email: mestor@gmail.com </span> <br><br>
+                  <button style="background-color: #4d8888; color: white;">Create QR</button>
+                </div>
+                <script>
+                  function togglePopup(){
+                    document.getElementById("popup1").classList.toggle("active");
+                  }
+                </script>
+                </div>
+                <div class="popup" id="popup2">
+                  <div class="overpopup">
+                  <div class="popupcontent">
+        
+                  </div>
+                  <div class="popupCloseButton" onclick="togglePopup1()"> &times; </div>
+                  <img src="C:\Users\Jerika\Documents\GitHub\baranguide-informatics\src image\brgy logo.jpg" class="residentimg" alt=""> <br><br>
+                  <span style="margin-left: 20px;"> Name: Venus Jemina</span> <br><br>
+                  <span style="margin-left: 20px;"> Address: 124 Purok 1 Brgy. Buer Pangasinan </span> <br><br>
+                  <span style="margin-left: 20px;"> Age: 21 </span> <br><br>
+                  <span style="margin-left: 20px;"> Number: 09234567891 </span> <br><br>
+                  <span style="margin-left: 20px;"> Email: vjemina@gmail.com </span> <br><br>
+                  <button style="background-color: #4d8888; color: white;">Create QR</button>
+                </div>
+                <script>
+                  function togglePopup1(){
+                    document.getElementById("popup2").classList.toggle("active");
+                  }
+                </script>
+                </div>
+                <div class="popup" id="popup3">
+                  <div class="overpopup">
+                  <div class="popupcontent">
+        
+                  </div>
+                  <div class="popupCloseButton" onclick="togglePopup2()"> &times; </div>
+                  <img src="C:\Users\Jerika\Documents\GitHub\baranguide-informatics\src image\brgy logo.jpg" class="residentimg" alt=""> <br><br>
+                  <span style="margin-left: 20px;"> Name: Ron Fernandez</span> <br><br>
+                  <span style="margin-left: 20px;"> Address: 123 Purok 1 Brgy. Buer Pangasinan </span> <br><br>
+                  <span style="margin-left: 20px;"> Age: 21 </span> <br><br>
+                  <span style="margin-left: 20px;"> Number: 09345678912 </span> <br><br>
+                  <span style="margin-left: 20px;"> Email: rfernandez@gmail.com </span> <br><br>
+                  <button style="background-color: #4d8888; color: white;">Create QR</button>
+                </div>
+                <script>
+                 
+                  function togglePopup2(){
+                    document.getElementById("popup3").classList.toggle("active");
+                  }
+                </script>
+                </div>
+                <div class="popup" id="popup4">
+                  <div class="overpopup">
+                  <div class="popupcontent">
+        
+                  </div>
+                  <div class="popupCloseButton" onclick="togglePopup3()"> &times; </div>
+                  <img src="C:\Users\Jerika\Documents\GitHub\baranguide-informatics\src image\brgy logo.jpg" class="residentimg" alt=""> <br><br>
+                  <span style="margin-left: 20px;"> Name: Jerika Kia Villar</span> <br><br>
+                  <span style="margin-left: 20px;"> Address: 123 Purok 1 Brgy. Buer Pangasinan </span> <br><br>
+                  <span style="margin-left: 20px;"> Age: 21 </span> <br><br>
+                  <span style="margin-left: 20px;"> Number: 09111111111 </span> <br><br>
+                  <span style="margin-left: 20px;"> Email: jvillar@gmail.com </span> <br><br>
+                  <button style="background-color: #4d8888; color: white;">Create QR</button>
+                </div>
+                <script>
+                  
+                  function togglePopup3(){
+                    document.getElementById("popup4").classList.toggle("active");
+                  }
+                </script>
+                </div>
+                <div class="popup" id="popup5">
+                  <div class="overpopup">
+                  <div class="popupcontent">
+        
+                  </div>
+                  <div class="popupCloseButton" onclick="togglePopup4()"> &times; </div>
+                  <img src="C:\Users\Jerika\Documents\GitHub\baranguide-informatics\src image\brgy logo.jpg" class="residentimg" alt=""> <br><br>
+                  <span style="margin-left: 20px;"> Name: Jessie Godezano</span> <br><br>
+                  <span style="margin-left: 20px;"> Address: 123 Purok 1 Brgy. Buer Pangasinan </span> <br><br>
+                  <span style="margin-left: 20px;"> Age: 21 </span> <br><br>
+                  <span style="margin-left: 20px;"> Number: 09198762637 </span> <br><br>
+                  <span style="margin-left: 20px;"> Email: jgodezano@gmail.com </span> <br><br>
+                  <button style="background-color: #4d8888; color: white;">Create QR</button>
+                </div>
+                <script>
+                
+                  function togglePopup4(){
+                    document.getElementById("popup5").classList.toggle("active");
+                  }
+                  
+                </script>
+                </div>
+                <div class="popup" id="popup6">
+                  <div class="overpopup">
+                  <div class="popupcontent">
+        
+                  </div>
+                  <div class="popupCloseButton" onclick="togglePopup5()"> &times; </div>
+                  <img src="C:\Users\Jerika\Documents\GitHub\baranguide-informatics\src image\brgy logo.jpg" class="residentimg" alt=""> <br><br>
+                  <span style="margin-left: 20px;"> Name: Ermir Donayre</span> <br><br>
+                  <span style="margin-left: 20px;"> Address: 123 Purok 1 Brgy. Buer Pangasinan </span> <br><br>
+                  <span style="margin-left: 20px;"> Age: 1 </span> <br><br>
+                  <span style="margin-left: 20px;"> Number: 09123456789 </span> <br><br>
+                  <span style="margin-left: 20px;"> Email: edonayre@gmail.com </span> <br><br>
+                  <button style="background-color: #4d8888; color: white;">Create QR</button>
+                </div>
+
+                <script>
+                  function togglePopup5(){
+                    document.getElementById("popup6").classList.toggle("active");
+                  }
+                </script>
+                </div>
+
               </div>
         </div>
            
