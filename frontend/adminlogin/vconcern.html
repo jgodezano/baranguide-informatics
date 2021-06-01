@@ -113,12 +113,11 @@
         <!-- Email List rows starts -->
         <div class="emailList__list">
           <!-- Email Row Starts -->
-          <div class="emailRow">
-            <div class="emailRow__options">
+          <div class="emailRow" onclick="togglePopup()">
+            <div class="emailRow__options" >
               <input type="checkbox" name="" id="" />
               <span class="material-icons"> star_border </span>
             </div>
-
             <h3 class="emailRow__title">Notification</h3>
 
             <div class="emailRow__message">
@@ -127,19 +126,22 @@
                 <span class="emailRow__description"> - November 11, 2020 </span>
               </h4>
             </div>
-
             <p class="emailRow__time">5pm</p>
+
+</div>
           </div>
+
+
           <!-- Email Row Ends -->
 
             <!-- Email Row Starts -->
-          <div class="emailRow">
+          <div class="emailRow" onclick="togglePopup()">
             <div class="emailRow__options">
               <input type="checkbox" name="" id="" />
               <span class="material-icons"> star_border </span>
             </div>
 
-            <h3 class="emailRow__title">Notification</h3>
+            <h3 class="emailRow__title" onclick="togglePopup1()">Notification</h3>
 
             <div class="emailRow__message">
               <h4>
@@ -153,7 +155,7 @@
           <!-- Email Row Ends -->
 
           <!-- Email Row Starts -->
-          <div class="emailRow">
+          <div class="emailRow" onclick="togglePopup()">
             <div class="emailRow__options">
               <input type="checkbox" name="" id="" />
               <span class="material-icons"> star_border </span>
@@ -173,7 +175,7 @@
           <!-- Email Row Ends -->
 
             <!-- Email Row Starts -->
-          <div class="emailRow">
+          <div class="emailRow" onclick="togglePopup()">
             <div class="emailRow__options">
               <input type="checkbox" name="" id="" />
               <span class="material-icons"> star_border </span>
@@ -193,7 +195,7 @@
           <!-- Email Row Ends -->
 
           <!-- Email Row Starts -->
-          <div class="emailRow">
+          <div class="emailRow" onclick="togglePopup()">
             <div class="emailRow__options">
               <input type="checkbox" name="" id="" />
               <span class="material-icons"> star_border </span>
@@ -213,7 +215,7 @@
           <!-- Email Row Ends -->
 
             <!-- Email Row Starts -->
-          <div class="emailRow">
+          <div class="emailRow" onclick="togglePopup()">
             <div class="emailRow__options">
               <input type="checkbox" name="" id="" />
               <span class="material-icons"> star_border </span>
@@ -233,7 +235,7 @@
           <!-- Email Row Ends -->
 
           <!-- Email Row Starts -->
-          <div class="emailRow">
+          <div class="emailRow" onclick="togglePopup()">
             <div class="emailRow__options">
               <input type="checkbox" name="" id="" />
               <span class="material-icons"> star_border </span>
@@ -253,7 +255,7 @@
           <!-- Email Row Ends -->
 
             <!-- Email Row Starts -->
-          <div class="emailRow">
+          <div class="emailRow" onclick="togglePopup()">
             <div class="emailRow__options">
               <input type="checkbox" name="" id="" />
               <span class="material-icons"> star_border </span>
@@ -269,16 +271,58 @@
             </div>
 
             <p class="emailRow__time">4pm</p>
-          </div>
+
+
           <!-- Email Row Ends -->
 
       <!-- Email List Ends -->
-    </div>
-         
+       </div>
 
+ 
+
+    </div>
+
+    <div class="popup" id="popup1">
+      <div class="overpopup">
+      <div class="popupcontent">
+    
+      </div>
+      <div class="popupCloseButton" onclick="togglePopup()"> &times; </div><br>
+      <span style="margin-left: 50px;"> Reply Here </span> <br><br>
+      <input type="textbox" placeholder="Write your message here..." style="width: 185px; height: 40px;"><br>
+      <button style="background-color: #4d8888; color: white; margin-left: 80px;">Send</button>
+            </div>
+    
+            <script>
+              function togglePopup(){
+                document.getElementById("popup1").classList.toggle("active");
+              }
+            </script>
+            </div>
+
+      <div class="popup" id="popup1">
+      <div class="overpopup">
+      <div class="popupcontent">
+    
+      </div>
+      <div class="popupCloseButton" onclick="togglePopup()"> &times; </div><br>
+      <span style="margin-left: 50px;"> Reply Here </span> <br><br>
+      <input type="textbox" placeholder="Write your message here..." style="width: 185px; height: 40px;"><br>
+      <button style="background-color: #4d8888; color: white; margin-left: 80px;">Send</button>
+            </div>
+    
+            <script>
+              function togglePopup(){
+                document.getElementById("popup1").classList.toggle("active");
+              }
+            </script>
+    
+            </div>
               
       </main>
     </div>
+
+   
 
   </body>
 </html>

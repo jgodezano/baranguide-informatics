@@ -341,3 +341,60 @@ input {
 }
 
 .button1 {background-color: #003380;} 
+
+
+.popup .overpopup {
+  position: fixed;
+  top: 500px;
+  left: 1110px;
+  width: 200px;
+  height: 140px;
+  background: white;
+  z-index: 1;
+  display: none;
+  border-radius: 5px;
+  border: 2px solid #052d31;
+  
+ 
+}
+
+.popup .popupcontent {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background: #fff;
+  width: 450px;
+  height: 300px;
+  z-index: 2;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.popup .popupCloseButton {
+    background-color: #fff;
+    border: 3px solid #999;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: arial;
+    font-weight: bold;
+    position: absolute;
+    top: -0px;
+    right: -0px;
+    font-size: 25px;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+.popup.active .overpopup {
+  display: block;
+}
+
+.popup.active .popupcontent {
+  transition: all 300ms ease-in-out;
+  transform: translate(-50%, -50%) scale(0);
+}
