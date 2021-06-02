@@ -52,6 +52,7 @@
   }
   
   .time span:last-child{
+    background: #2E94E3;
     font-size: 30px;
     font-weight: 600;
     text-transform: uppercase;
