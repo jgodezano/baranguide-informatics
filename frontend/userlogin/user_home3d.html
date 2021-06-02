@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Home</title>
+    <link rel="stylesheet" href="user_home3d.css" />
+  </head>
+<body onload="initClock()">
+
+
+    <div class="container">
+        <div class="navbar" >
+          <div class="menu">
+            <h3 class="logo" style="margin-left: -150px;">Baranguide<span>Informatics</span></h3>
+              <div class="menu-menu">
+                <div class="bar"></div>
+              </div>
+          </div>
+        </div>
+
+        <div class="main-container">
+                <div class="main">
+                  <header>
+                    <div class="overlay">
+                      <div class="inner">
+                        <h2 class="title">Welcome to Barangay Buer</h2>
+                          <p>
+                            Buer is a barangay in the municipality of Aguilar, in the province of Pangasinan.
+                          </p>
+                          
+                          <a href="user_about.html">
+                            <button class="btn">Read more</button>
+                          </a>
+                          <br>
+                          <a href="C:\Users\63935\git\baranguide-informatics\frontend\userlogin\tips.html">
+                            <button class="btn">How to Use</button>
+                          </a>
+                      </div>
+
+<!--digital clock start-->
+<div class="datetime">
+  <div class="date">
+    <span id="dayname">Day</span>,
+    <span id="month">Month</span>
+    <span id="daynum">00</span>,
+    <span id="year">Year</span>
+  </div>
+  <div class="time">
+    <span id="hour">00</span>:
+    <span id="minutes">00</span>:
+    <span id="seconds">00</span>
+    <span id="period">AM</span>
+  </div>
+</div>
+<!--digital clock end-->
+
+<script type="text/javascript">
+function updateClock(){
+  var now = new Date();
+  var dname = now.getDay(),
+      mo = now.getMonth(),
+      dnum = now.getDate(),
+      yr = now.getFullYear(),
+      hou = now.getHours(),
+      min = now.getMinutes(),
+      sec = now.getSeconds(),
+      pe = "AM";
+
+      if(hou >= 12){
+        pe = "PM";
+      }
+      if(hou == 0){
+        hou = 12;
+      }
+      if(hou > 12){
+        hou = hou - 12;
+      }
+
+      Number.prototype.pad = function(digits){
+        for(var n = this.toString(); n.length < digits; n = 0 + n);
+        return n;
+      }
+
+      var months = ["January", "February", "March", "April", "May", "June", "July", "Augest", "September", "October", "November", "December"];
+      var week = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+      var ids = ["dayname", "month", "daynum", "year", "hour", "minutes", "seconds", "period"];
+      var values = [week[dname], months[mo], dnum.pad(2), yr, hou.pad(2), min.pad(2), sec.pad(2), pe];
+      for(var i = 0; i < ids.length; i++)
+      document.getElementById(ids[i]).firstChild.nodeValue = values[i];
+}
+
+function initClock(){
+  updateClock();
+  window.setInterval("updateClock()", 1);
+}
+</script>
+
+                    </div>
+                  </header>
+                </div>
+
+                
+  
+          <div class="shadow one"></div>
+          <div class="shadow two"></div>
+        </div>
+  
+        <div class="links">
+          <ul>
+            <li>
+              <a href="C:\Users\63935\git\baranguide-informatics\frontend\userlogin\user_residentinfo.html" style="--i: 0.05s;" class="line">Profile</a>
+            </li>
+            <li>
+              <a href="C:\Users\63935\git\baranguide-informatics\frontend\userlogin\user_request.html" style="--i: 0.1s;" class="line">Request</a>
+            </li>
+            <li>
+              <a href="C:\Users\63935\git\baranguide-informatics\frontend\userlogin\user_ir.html" style="--i: 0.15s;" class="line">Blotter</a>
+            </li>
+            <li>
+              <a href="C:\Users\63935\git\baranguide-informatics\frontend\userlogin\user_announcement.html" style="--i: 0.2s;" class="line">Announcement</a>
+            </li>
+            <li>
+              <a href="C:\Users\63935\git\baranguide-informatics\frontend\userlogin\user_concern.html" style="--i: 0.25s;" class="line">Concerns</a>
+            </li>
+            <li>
+              <a href="C:\Users\63935\git\baranguide-informatics\frontend\userlogin\user_hotline.html" style="--i: 0.3s;" class="line">Emergency Hotlines</a>
+            </li>
+          </ul>
+        </div>
+            <div class="right_area">
+              <a href="C:\Users\63935\git\baranguide-informatics\frontend\index.html" class="logout"> Logout</a>
+            </div>
+            </div>
+      </div>
+
+      
+
+
+      <script type="text/javascript" src="C:\Users\63935\git\baranguide-informatics\frontend\userlogin\3d.js"></script>
+</body>
+</html>

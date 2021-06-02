@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!---<title> Responsive Registration Form | CodingLab </title>--->
+    <link rel="stylesheet" href="user_ir.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <div class="title">Incident Report</div>
+    <div p="par">To report an Incident, Please provide the following information.</div>
+    <hr>
+    <h3> Compliants Details</h3>
+    <div class="content">
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+          
+            <span class="details">Compliant Name</span>
+            <input type="text" placeholder="Enter your name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Age</span>
+            <input type="text" placeholder="Enter your Age" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Contact</span>
+            <input type="text" placeholder="Enter your contact" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Street or Purok</span>
+            <input type="text" placeholder="Enter your Street" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Civil Status</span>
+            <input type="text" placeholder="Enter your Status" required>
+          </div>
+        </div>
+        <hr>
+        <h3> Person Involved Details</h3>
+        <div class="content">
+            <form action="#">
+              <div class="user-details">
+                <div class="input-box">
+                    
+                  <span class="details"> Person to Complain</span>
+                  <input type="text" placeholder="Enter the name" required>
+                </div>
+                <div class="input-box">
+                  <span class="details">Street or Purok</span>
+                  <input type="text" placeholder="Enter his/her Street" required>
+                </div>
+                </div>
+        <hr>
+  <div class="form-group">
+    <h3>Details</h3>
+    <div class="grid">
+    <div class="col-1-4 col-1-4-sm">
+      <div class="controls">
+      </i>&nbsp;&nbsp;Reporting Date</label>
+        <input type="date" id="arrive" class="floatLabel" name="arrive" value="<?php echo date('Y-m-d'); ?>">
+        <label for="arrive" class="label-date"><i class="fa fa-calendar">
+        </i>&nbsp;&nbsp;Date Incident Happened</label>
+        <input type="date" id="depart" class="floatLabel" name="depart" value="<?php echo date('Y-m-d'); ?>" />
+        <label for="depart" class="label-date"><i class="fa fa-calendar">
+      </div>
+    </div>
+      <br>
+      <div class="grid">
+        <h3>Please narate the incident story.</h3>
+        <label for="story">Tell us your story:</label>
+        <br>
+        <textarea id="story" name="story"
+        rows="5" cols="120">
+        </textarea>
+        
+        <div class="button">
+          <input type="submit" value="Submit Blotter Report">
+        </div>
+       
+      </form>
+    </div>
+  </div>
+  
+
+</body>
+</html>
