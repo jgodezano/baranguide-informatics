@@ -1,1 +1,0 @@
-# Baranguide-Informatics
