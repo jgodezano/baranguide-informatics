@@ -243,3 +243,7 @@ form .input-box3 span.details{
 .user-details .input-box3 input:valid{
   border-color: #2F4F4F;
 }
+
+a{
+  color: #2d858d;
+}
