@@ -36,25 +36,28 @@
  header {
     position: fixed;
     background: #052d31;
-    padding: 20px;
+    padding: 25px;
     width: 100%;
-    height: 30px;
+    height: 0px;
   }
 
-  .left_area h3 {
-    color: rgb(24, 218, 33);
-    margin: 0 20;
-    font-size: 25px;
-    font-weight: 900;
-     font-family: "Times New Roman", Times, serif;
-  }
+
+.avatar {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 80%;
+  overflow: hidden;
+  top: calc(-75px/2);
+  left: 350px;
+}
 
 h1 {
   color: rgb(179, 0, 0);
     font-size: 20px;
     font-weight: 900;
     text-align: left;
-    margin-left: 300px;
+    margin-left: 170px;
 
 }
 
@@ -101,13 +104,16 @@ h8 {
 }
 
 .container {
-  background-color:#c2d6d6;
+ background-image: url(bglogo.jpg);
+ background-size: 900px;
+ background-position: center;
+  background-repeat: no-repeat;
   box-shadow: 0 14px 40px rgba(0,0,0,0.25), 
       0 10px 10px rgba(0,0,0,0.22);
   position: fixed;
   overflow: hidden;
   width: 900px;
-  min-height: 550px;
+  min-height: 580px;
   margin-top: 650px;
   overflow: auto;
 }
