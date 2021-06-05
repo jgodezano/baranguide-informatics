@@ -159,3 +159,20 @@ form .user-details .input-box{
       display: block;
       margin-bottom: 10px;
   }}}
+
+.image-preview {
+  width: 735px;
+  min-height: 200px;
+  border: 2px solid #014e44;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #cccccc;
+}
+
+p{
+  font-size: 14px;
+  text-align: justify;
+}

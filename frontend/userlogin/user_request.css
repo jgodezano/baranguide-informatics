@@ -52,6 +52,7 @@ form .input-box span.details{
   font-weight: 500;
   margin-bottom: 5px;
 }
+
 .user-details .input-box input{
   height: 45px;
   width: 100%;
@@ -93,10 +94,11 @@ form .input-box span.details{
 }
  #dot-1:checked ~ .category label .one,
  #dot-2:checked ~ .category label .two,
- #dot-3:checked ~ .category label .three,{
+ #dot-3:checked ~ .category label .three{
    background: #9b59b6;
    border-color: #d9d9d9;
  }
+
  form input[type="radio"]{
    display: none;
  }
@@ -276,5 +278,7 @@ form .user-details .input-box{
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+
+
 
 }

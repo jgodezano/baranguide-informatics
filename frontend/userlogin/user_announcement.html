@@ -3,7 +3,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Google Font Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link rel="stylesheet" href="user_announcement.css" />
     <title>Notification</title>
@@ -22,9 +21,9 @@ body {
       <!-- Email List Starts -->
       <div class="emailList">
         <!-- Settings Starts -->
-        <div class="emailList__settings">
-          <div class="header__middle">
-            <span class="material-icons"> search </span>
+        <div class="emailList__settings" style="height: 100px;">
+          <div class="header__middle" style="margin-top: 30px;">
+            <span class="material-icons" > search </span>
             <input type="text" placeholder="Search mail" />
             <span class="material-icons"> arrow_drop_down </span>
           </div>
@@ -32,12 +31,15 @@ body {
         <!-- Settings Ends -->
 
         <!-- Section Starts -->
-        <div class="emailList__sections" style="margin-bottom: 40px;">
-          <div class="section section__selected">
-            <span class="material-icons"> inbox </span>
-            <h4>All Announcement</h4>
+        <div class="emailList__sections" style="margin-bottom: 0px;">
+          <div class="section section__selected" style="width: 220px; height: 50px; border-radius: 10px; margin-top: -85px;">
+            <span class="material-icons" style="margin-left: 10px;"> inbox </span>
+            <h4 style=" font-size: 15px;">All Announcement</h4>
           </div>
-
+          <div class="section section__selected" style="width: 50px; height: 50px; border-radius: 10px; margin-top: -85px; margin-left: 10px;">
+            <span class="material-icons" style="margin-left: 40px;"> inbox </span>
+            <h4 style=" font-size: 15px;">View by</h4>
+          </div>
           
         </div>
         <!-- Section Ends -->

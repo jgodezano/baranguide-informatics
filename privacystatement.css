@@ -1,6 +1,6 @@
 /*  styling scrollbars  */
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 10px;
   height: 6px;
 }
 
@@ -29,36 +29,75 @@
     border: 0;
     background-color: #597272;
     background-size: cover;
-    overflow: scroll;
     position: sticky;
 }
 
- header {
-    position: fixed;
-    background: #052d31;
-    padding: 25px;
-    width: 100%;
-    height: 0px;
+body::before{
+  content: '';
+  position: fixed;
+  width: 2000px;
+  height: 780px;
+  background-image: url(bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: 900px 575px;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  filter: blur(5px);
+  margin-top: 640px;
+}
+
+header{
+  position: fixed;
+  background: #052d31;
+  padding: 20px;
+  width: 100%;
+  height: 30px;
+  margin-top: -20px;
+}
+
+.left_area h3{
+  color: rgb(24, 218, 33);
+    text-transform: uppercase;
+    margin-top: -5px;
+    margin-left: 10px;
+    font-size: 25px;
+    font-weight: 900;
   }
 
+  .left_area span{
+    color: rgb(245, 245, 245);
+  }
+
+  .right_area{
+      text-transform: uppercase;
+      margin-top: -61px;
+      text-align: right;
+      margin-right: 10px;
+      font-size: 25px;
+      font-weight: 900;
+    }
+  
+    .right_area span{
+      color: rgb(245, 245, 245);
+    }
 
 .avatar {
   position: absolute;
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 110px;
   border-radius: 80%;
   overflow: hidden;
-  top: calc(-75px/2);
-  left: 350px;
+  top: calc(-70px/2);
+  left: 340px;
 }
 
 h1 {
   color: rgb(179, 0, 0);
     font-size: 20px;
     font-weight: 900;
-    text-align: left;
-    margin-left: 150px;
-
+    text-align: center;
 }
 
 h2 {
@@ -91,8 +130,12 @@ h8 {
   font-size: 20px;
 }
 
+p{
+  text-align: justify;
+}
+
 .left_area h1 {
-    color: rgb: red;
+    color:  red;
     margin: 0 20;
     font-size: 25px;
     font-weight: 900;
@@ -101,11 +144,11 @@ h8 {
 
 #content{
   overflow: scroll;
+  
 }
 
 .container {
- background-image: url(bglogo.jpg);
- background-size: 900px;
+ background-size: 450px;
  background-position: center;
   background-repeat: no-repeat;
   box-shadow: 0 14px 40px rgba(0,0,0,0.25), 
@@ -127,5 +170,5 @@ h8 {
   width: 700px;
   height: 1500px;
   padding: 80px 40px;
-  background: currentColor:#c2d6d6 ;
+  background: currentColor #c2d6d6 ;
 } 

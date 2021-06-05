@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<!-- Created By CodingLab - www.codinglabweb.com -->
 <html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8">
-    <!---<title> Responsive Registration Form | CodingLab </title>--->
+    <title> Other Concerns to Good Samaritan </title>
     <link rel="stylesheet" href="user_concern.css">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
 <body>
   <div class="container">
     <div class="title"> Other Concerns to Good Samaritarian</div>
-    <div p="par">To initiate something, Please provide the following information.</div>
+    <div p="par">To initiate something, please provide the following information.</div>
     <hr>
     <h3> Personal Details</h3>
     <div class="content">
@@ -21,44 +20,8 @@
             <input type="text" placeholder="Enter your name" required>
           </div>
           <div class="input-box">
-            <span class="details">Age</span>
-            <input type="text" placeholder="Enter your Age" required>
-          </div>
-          <div class="input-box">
-            <span class="details">Email</span>
-            <input type="text" placeholder="Enter your email" required>
-          </div>
-          <div class="input-box">
             <span class="details">Phone Number</span>
             <input type="text" placeholder="Enter your number" required>
-          </div>
-          <div class="input-box">
-            <span class="details">Street/Purok</span>
-            <input type="text" placeholder="Enter your Street" required>
-          </div>
-          <div class="input-box">
-            <span class="details">Civil Status</span>
-            <input type="text" placeholder="Enter your Civil Status" required>
-          </div>
-        </div>
-        <div class="gender-details">
-          <input type="radio" name="gender" id="dot-1">
-          <input type="radio" name="gender" id="dot-2">
-          <input type="radio" name="gender" id="dot-3">
-          <span class="gender-title">Gender</span>
-          <div class="category">
-            <label for="dot-1">
-            <span class="dot one"></span>
-            <span class="gender">Male</span>
-          </label>
-          <label for="dot-2">
-            <span class="dot two"></span>
-            <span class="gender">Female</span>
-          </label>
-          <label for="dot-3">
-            <span class="dot three"></span>
-            <span class="gender">Prefer not to say</span>
-            </label>
           </div>
         </div>
         <hr>
@@ -85,15 +48,48 @@
                 </div>
                 <div class="grid">
                   <h3>Please narate the full context of your concern.</h3>
-                  <label for="story">Narate here...</label>
+                  <label for="story">Narrate here...</label>
                   <br>
                   <textarea id="story" name="story"
-                  rows="10" cols="95">
+                  rows="10" cols="100">
                   </textarea>
+                  <h3>You can attach image regarding the event</h3>
+        <input type="file" name="inpFile" id="inpFile">
+        <div class="image-preview" id="imagePreview">
+          <img src="" alt="&nbsp Image Preview" class="image-preview__image">
+          <span class="image-preview__default-text"></span>
+        </div>
+                  <br><br>
                 <hr>
             <div class="button">
           <input type="submit" value="Submit Concern">
         </div>
+        <script>
+          const inpFile = document.getElementById("inpFile");
+          const previewContainer = document.getElementById("imagePreview");
+          const previewImage = previewContainer.querySelector(".image-preview__image");
+          const previewDefaultText = previewContainer.querySelector(".image-preview__default-text");
+
+          inpFile.addEventListener("change", function(){
+            const file = this.files[0];
+
+            if (file) {
+              const reader = new FileReader();
+
+              previewDefaultText.style.display = "none";
+              previewImage.style.display = "block";
+
+              reader.addEventListener("load", function(){
+                previewImage.setAttribute("src", this.result);
+              });
+
+              reader.readAsDataURL(file);
+            }else {
+              previewDefaultText.style.display = null;
+              previewImage.style.display = null;
+            }
+          });
+    </script>
       </form>
     </div>
   </div>
