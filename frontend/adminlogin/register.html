@@ -13,50 +13,39 @@
       <form action="#">
         <div class="user-details">
           <div class="input-box0">
-            <span class="details">First Name</span>
-            <input type="text" placeholder="Enter your first name" required>
+            <label for="inputfname" class="text-nowrap" class="details">First Name</label>
+            <input name="fname" class="form-control" id="inputfname" type="text" aria-describedby="fnameHelp" placeholder="Enter your first name" required>
           </div>
           <div class="input-box0">
-            <span class="details">Middle Name</span>
-            <input type="text" placeholder="Enter your middle name">
+            <label for="inputmname" class="text-nowrap" class="details">Middle Name</label>
+            <input name="mname" class="form-control" id="inputmname" type="text" aria-describedby="mnameHelp" placeholder="Enter your middle name">
           </div>
           <div class="input-box0">
-            <span class="details">Last Name</span>
-            <input type="text" placeholder="Enter your last name" required>
+            <label for="inputlname" class="text-nowrap" class="details">Last Name</label>
+            <input name="lname" class="form-control" id="inputlname" type="text" aria-describedby="lnameHelp" placeholder="Enter your last name" required>
           </div>
         
-          <div class="gender-details">
-          <input type="radio" name="gender" id="dot-1">
-          <input type="radio" name="gender" id="dot-2">
-          <span class="gender-title">Gender</span>
-          <div class="category">
-            <label for="dot-1">
-            <span class="dot one"></span>
-            <span class="gender">Male  </span>
-          </label>
-          <label for="dot-2">
-            <span class="dot two"></span>
-            <span class="gender">Female</span>
-          </label>
+          <div class="input-box2">
+            <label for="inputgender" class="text-nowrap" class="details">Gender</label>
+            <input name="gender" class="form-control" id="inputgender" type="text" aria-describedby="genderHelp" placeholder="Enter your age" required>
           </div>
-        </div>
-
-        <div class="input-box2">
-            <span class="details">Birthday</span>
-            <input type="date" id="birthday" name="birthday" required style="color: gray;" required>
+          <div class="input-box2">
+            <label for="inputbirthday" class="text-nowrap" class="details">Birthday</label>
+            <input name="birthday" class="form-control" id="inputbirthday" type="date" aria-describedby="birthdayHelp" style="color: gray;" required>
           </div>
-        <div class="input-box2">
-            <span class="details">Age</span>
-            <input type="text" placeholder="Age" required>
+          <div class="input-box2">
+            <label for="inputage" class="text-nowrap" class="details">Age</label>
+            <input name="age" class="form-control" id="inputage" type="text" aria-describedby="ageHelp" placeholder="Enter your age" required>
           </div>
 
           <div class="input-box1">
-            <span class="details">Address</span>
-            <input type="text" placeholder="Enter your full address" required>
+            <label for="inputaddress" class="text-nowrap" class="details">Address</label>
+            <input name="address" class="form-control" id="inputaddress" type="text" aria-describedby="addressHelp" placeholder="Enter your full address" required>
           </div>
           <div class="input-box0">
-            <span class="details">Purok</span>
-            <select name="Purok" id="purok" required>
+            <label class="details">Purok</label>
+            <select name="purok" class="form-control" id="purok" required>
+              <option></option>
               <option value="dahlia">Purok Dahlia</option>
               <option value="ilangilang">Purok Ilang-Ilang </option>
               <option value="rosal">Purok Rosal</option>
@@ -64,12 +53,13 @@
           </div>
 
           <div class="input-box0">
-            <span class="details">Place of Birth</span>
-            <input type="text" placeholder="Enter your place of birth" required>
+            <label for="inputplaceofbirth" class="text-nowrap" class="details">Place of Birth</label>
+            <input name="placeofbirth" class="form-control" id="inputplaceofbirth" type="text" aria-describedby="placeofbirthHelp" placeholder="Enter your place of birth" required>
           </div>
           <div class="input-box0">
-            <span class="details">Civil Status</span>
-            <select name="Civil Status" id="civilstatus" required>
+            <label class="details">Civil Status</label>
+            <select name="civilstatus" class="form-control" id="civilstatus" required>
+              <option></option>
               <option value="single">Single</option>
               <option value="married">Married</option>
               <option value="divorced">Divorced</option>
@@ -78,69 +68,73 @@
             </select>
           </div>
           <div class="input-box0">
-            <span class="details">Religion</span>
-            <input type="text" placeholder="Enter your religion" required>
+            <label for="inputreligion" class="text-nowrap" class="details">Religion</label>
+            <input name="religion" class="form-control" id="inputreligion" type="text" aria-describedby="religionHelp" placeholder="Enter your religion" required>
           </div>
           <div class="input-box0">
-            <span class="details">Phone Number</span>
-            <input type="text" placeholder="Enter your number" required>
+            <label for="inputphonenumber" class="text-nowrap" class="details">Phone Number</label>
+            <input name="phonenumber" class="form-control" id="inputphonenumber" type="text" aria-describedby="phonenumberHelp" placeholder="Enter your number" required>
           </div>
 
           <div class="input-box0">
-            <span class="details">Resident Type</span>
-            <select name="Resident Type" id="rtype" required>
+            <label class="details">Resident Type</label>
+            <select name="residenttype" class="form-control" id="residenttype" required>
+              <option></option>
               <option value="owner">Owner</option>
               <option value="temporarytenant">Temporary/Tenant</option>
               <option value="pensioners">Pensioners</option>
             </select>
           </div>
           <div class="input-box0">
-            <span class="details" style="font-size: 14px;">Are you a Voter or Non-voter?</span>
-            <select name="" id="votern" style="margin-top: 4px;" required>
+            <label class="details" style="font-size: 14px;">Are you a Voter or Non-voter?</label>
+            <select name="voterornonvoter" class="form-control" id="voterornonvoter" style="margin-top: 4px;" required>
+              <option></option>
               <option value="voter">Voter</option>
               <option value="nonvoter">Non-voter</option>
             </select>
           </div>
 
           <div class="input-box">
-            <span class="details">Who is the head of the family?</span>
-            <input type="text" placeholder="Name of Mother/Father as head of the family" style="font-size: 12.7px;" required>
+            <label for="inputheadoffamily" class="text-nowrap" class="details">Who is the head of the family?</label>
+            <input name="headoffamily" class="form-control" id="inputheadoffamily" type="text" aria-describedby="headoffamilyHelp" placeholder="Name of Mother/Father as head of the family" style="font-size: 12.7px;" required>
           </div>
           <div class="input-box">
-            <span class="details">How many are the minors of the family?</span>
-            <input type="number" placeholder="Minors of the family excluding Mother/Father" style="font-size: 12.7px;" required>
+            <label for="inputminoroffamily" class="text-nowrap" class="details" style="font-size: 14px;">How many are the minor/s of the family?</label>
+            <input name="minoroffamily" class="form-control" id="inputminoroffamily" type="number" aria-describedby="minoroffamilyHelp" placeholder="Minors of the family excluding Mother/Father" style="font-size: 12.7px;" required>
           </div>
 
           <div class="input-box">
-            <span class="details">Senior Citizen</span>
-            <select name="Are you a senior citizen?" id="seniorcitizen" required>
+            <label class="details">Senior Citizen</label>
+            <select name="seniorcitizen" class="form-control" id="seniorcitizen" required>
+              <option></option>
               <option value="yes">Yes</option>
               <option value="no">No</option>
             </select>
           </div>
           <div class="input-box">
-            <span class="details">4P's Member</span>
-            <select name="Are you a 4P's member?" id="4ps" required>
+            <label class="details">4P's Member</label>
+            <select name="4Psmember" class="form-control" id="4psmember" required>
+              <option></option>
               <option value="y">Yes</option>
               <option value="n">No</option>
             </select>
           </div>
 
 <div class="input-box3">
-<span class="details"> Front Picture of Valid ID </span> 
-<input type="file" id="myFile" name="filename" required>
+<label class="details"> Front Picture of Valid ID </label> 
+<input type="file" class="form-control" id="myFile" name="filename" required>
 </div>
 <div class="input-box3">
-<span class="details"> Back Picture of Valid ID </span>
-<input type="file" id="myFile" name="filename" required>
+<label class="details"> Back Picture of Valid ID </label>
+<input type="file" class="form-control" id="myFile" name="filename" required>
 </div>
           <div class="input-box">
-            <span class="details">Username</span>
-            <input type="text" placeholder="Enter your username" required>
+            <label for="inputpassword" class="text-nowrap" class="details">Username</label>
+            <input name="username" class="form-control" type="text" id="inputusername" placeholder="Enter your username" required>
           </div>
           <div class="input-box">
-            <span class="details">Password</span>
-            <input type="text" placeholder="Enter your password" id="password" minlength="8" required>
+            <label for="confirmpassword" class="text-nowrap" class="details">Password</label>
+            <input name="password" class="form-control" type="password" placeholder="Enter your password" id="confirmpassword" minlength="8" required>
           </div>
 </div>
 <p><input type="checkbox" id="tick" name="tick" required>   By using this service, you understood and agree to the BaranGuide Informatics <a href="C:\Users\Jerika\Documents\GitHub\baranguide-informatics\termsofuse.html" class="tick">Terms of Use</a>, <a href="C:\Users\Jerika\Documents\GitHub\baranguide-informatics\privacystatement.html"> Privacy Statement</a> and <a href="C:\Users\Jerika\Documents\GitHub\baranguide-informatics\ra.html"> R.A. </a></p>

@@ -55,7 +55,7 @@ form .input-box span.details{
   height: 45px;
   width: 100%;
   outline: none;
-  font-size: 16px;
+  font-size: 12.7px;
   border-radius: 5px;
   padding-left: 15px;
   border: 1px solid #ccc;
@@ -159,7 +159,7 @@ form .input-box0 span.details{
   height: 45px;
   width: 100%;
   outline: none;
-  font-size: 16px;
+  font-size: 12.7px;
   border-radius: 5px;
   padding-left: 15px;
   border: 1px solid #ccc;
@@ -184,7 +184,7 @@ form .input-box1 span.details{
   height: 45px;
   width: 100%;
   outline: none;
-  font-size: 16px;
+  font-size: 12.7px;
   border-radius: 5px;
   padding-left: 15px;
   border: 1px solid #ccc;
@@ -209,7 +209,7 @@ form .input-box2 span.details{
   height: 45px;
   width: 100%;
   outline: none;
-  font-size: 16px;
+  font-size: 12.7px;
   border-radius: 5px;
   padding-left: 15px;
   border: 1px solid #ccc;
@@ -234,7 +234,7 @@ form .input-box3 span.details{
   height: 45px;
   width: 100%;
   outline: none;
-  font-size: 16px;
+  font-size: 12.7px;
   border-radius: 5px;
   border-bottom-width: 2px;
   transition: all 0.3s ease;
